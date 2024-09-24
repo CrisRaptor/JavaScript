@@ -1,3 +1,5 @@
+///////////////////Ejemplos clase///////////////////
+
 /* let num1 = 1, num2 = "1";
 console.log("Num1 "+typeof num1);
 console.log("Num2 "+typeof num2);
