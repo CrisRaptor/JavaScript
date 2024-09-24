@@ -19,5 +19,26 @@ console.log(name); */
 console.log(SALARY);
 //SALARY = 1001; */
 
-let person = {};
+/* let person = {name: "Jon", age: 30};
 console.log(person);
+console.log("Nombre "+person.name);
+console.log("Edad "+person.age);
+console.log("Ciudad "+person.city);
+person.name = "Jane";
+console.log(person);
+console.log("Nombre "+person.name);
+console.log("Edad "+person.age);
+console.log("Ciudad "+person.city); */
+
+const person = {name: "Jon", age: 30};
+console.log(person);
+console.log("Nombre "+person.name);
+console.log("Edad "+person.age);
+console.log("Ciudad "+person.city);
+person.name = "Jane";
+console.log(person);
+console.log("Nombre "+person.name);
+console.log("Edad "+person.age);
+console.log("Ciudad "+person.city);
+person.children = 4;
+console.log("Hijos "+person.children);
