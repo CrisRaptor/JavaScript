@@ -1,4 +1,4 @@
-//Create a list with people. Show the names of those whose age is greater or equal  than 18. {name: ‘Jon’, age: 30}
+//Create a list with people. Show the names of those whose age is greater or equal  than 18.
 const list = [
         { name: 'Jhon', age: 30}, 
         { name: 'Anna', age: 25}, 
