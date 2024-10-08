@@ -1,10 +1,18 @@
 const lista = document.querySelector(".lista");
-lista.innerHTML=`<thead id="tHead">
+lista.innerHTML=`<thead id="tHead" class="table-dark">
 <tr>
+  <th>a</th>
+  <th>b</th>
 </tr>
 </thead>
-<tbody id="tBody">
+<tbody id="tBody" class="table-group-divider">
 <tr>
+  <td>ja</td>
+  <td>je</td>
+</tr>
+<tr>
+  <td>je</td>
+  <td>ja</td>
 </tr>
 </tbody>`
 /*Elementos de la tabla
