@@ -12,8 +12,7 @@ lista.innerHTML = `<thead id="tHead" class="table-dark">
 const head = document.getElementById("tHead");
 const body = document.getElementById("tBody");
 
-console.log(books[0]);
-//Header HTML generation
+//Table Header HTML generation
 const elements = Object.keys(books[0]);
 elements.forEach(element => {
     document.getElementById("tr0").innerHTML += `<th>
@@ -21,11 +20,24 @@ elements.forEach(element => {
     </th>`
 });
 
-//Body HTML generation
+//Table Body HTML generation
+let i = 1;
+console.log(books.length);
 books.forEach(e => {
-    body.innerHTML += `<tr>`;
+    body.innerHTML += `<tr id="tr${i}"></tr>`
     elements.forEach(element => {
-        body.innerHTML += `<td>${e[element]}</td>`;
+        let row = document.getElementById(`tr${i}`);
+        switch (element) {
+            case "Website":
+                row.innerHTML += `<td><a href="${e[element]}" target="_blank">${e[element]}</a></td>`;
+                break;
+            case "Author":
+                row.innerHTML += `<td>${e[element].join("<br>")}</td>`;
+                break;
+            default:
+                row.innerHTML += `<td>${e[element]}</td>`;
+                break;
+        }
     });
-    body.innerHTML += `</tr>`;
-}); 
+    i++;
+});
